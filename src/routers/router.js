@@ -1,11 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-
 import HomeView from '@/views/HomeView.vue';
 import CoursesView from '@/views/CoursesView.vue';
 import InternshipView from '@/views/InternshipView.vue';
 import RegistrationView from '@/views/RegistrationView.vue';
-import ContactView from '@/views/ContactView.vue';
 
 Vue.use(Router)
 
@@ -28,10 +26,6 @@ export default new Router({
         {
             path: '/Registration',
             component: RegistrationView,
-        },
-        {
-            path: '/Contact',
-            component: ContactView,
         }
     ]
 });

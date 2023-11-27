@@ -20,14 +20,16 @@
       <v-navigation-drawer v-model="drawer" app>
         <v-list>
           <v-list-item>
-              <img src="@/assets/blazon.png" class="blazon">
+            <img src="@/assets/blazon.png" class="blazon" />
           </v-list-item>
         </v-list>
         <v-divider></v-divider>
         <v-list nav dense>
           <v-list-item-group v-model="selectedItem" color="#23832c">
             <v-list-item v-for="(item, i) in items" :key="i" :to="item.link">
-              <v-list-item-icon></v-list-item-icon>
+              <v-list-item-icon>
+                <v-icon v-text="item.icon"></v-icon>
+              </v-list-item-icon>
               <v-list-item-content>
                 <v-list-item-title class="custom-btn-resize" v-text="item.text"></v-list-item-title>
               </v-list-item-content>
@@ -54,11 +56,10 @@ export default {
       scrollTop: 0,
       selectedItem: 0,
       items: [
-        { link: "/", text: "Home" },
-        { link: "/Courses", text: "Cursos" },
-        { link: "/Internship", text: "Estágio" },
-        { link: "/Registration", text: "Matrícula" },
-        { link: "/Contact", text: "Contato" },
+        { link: "/", text: "Home", icon: "mdi-home" },
+        { link: "/Courses", text: "Cursos", icon: "mdi-book-open-variant" },
+        { link: "/Internship", text: "Estágio", icon: "mdi-account-file-text" },
+        { link: "/Registration", text: "Matrícula", icon: "mdi-account-plus" }
       ],
       drawer: null,
       screenSize: document.documentElement.clientWidth,
@@ -149,7 +150,7 @@ export default {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 7px;
 }
-.v-list-item__title.custom-btn-resize{
+.v-list-item__title.custom-btn-resize {
   font-size: 16px;
 }
 .topbarResize {
