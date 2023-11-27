@@ -58,7 +58,13 @@
 </template>
 
 <script>
+  export default {
+    name: 'HomeView',
 
+    data: () => ({
+      //
+  }),
+}
 </script>
 
 <style scoped>
