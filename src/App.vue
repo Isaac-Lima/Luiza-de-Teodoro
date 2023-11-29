@@ -14,8 +14,8 @@ export default {
   name: 'App',
 
   components: {
-    TopBar,
-  },
+    TopBar
+  }, 
 
   data: () => ({
     //

@@ -1,91 +1,57 @@
 <template>
   <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
+    <!-- Competencies -->
+    <v-row>
+      <v-col>
+        <div class="ma-4">
+          <v-img width="580" class="img rounded-xl" :aspect-ratio="1" src="@/assets/competencies.png"></v-img>
+        </div>
       </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
+      <v-col class="ma-2">
+        <p class="text-h4 mb-8 font-weight-bold">Desenvolvimento e crescimento de competências</p>
+        <p class="text">Todo o trabalho desenvolvido no Luiza de Teodoro tem o objetivo de garantir uma aprendizagem sólida e significativa, que propicie a formação humana e científica, além da visão crítica voltada para a construção de um mundo mais justo e feliz.</p>
+        <p class="text">Cada ação é planejada de maneira tal que os adolescentes encontrem na escola o aconchego e acolhimento necessários para o seu pleno desenvolvimento em todas as áreas, preparando-os para os desafios que a vida pode apresentar.</p>
+        <v-btn class="mt-10 text-button" style="background: #18A830; color: #fff;">garanta a matrícula</v-btn>
       </v-col>
+    </v-row>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
+    <!-- Courses -->
+    <div class="courses">
+      <p class="mt-10 mb-10 text-h4 text-center font-weight-bold">Nossos courses</p>
+      <v-row>
+        <v-col>
+          <div class="ma-4" align="center">
+            <v-img class="rounded-xl" width="335" :aspect-ratio="1" src="../assets/curso-informatica.png"></v-img>
+            <v-btn class="mt-10 text-button" style="background: #18A830; color: #fff;">Informática</v-btn>
+          </div>
+        </v-col>
+        <v-col>
+          <div class="ma-4" align="center">
+            <v-img class="rounded-xl" width="335" :aspect-ratio="1" src="../assets/curso-logistica.png"></v-img>
+            <v-btn class="mt-10 text-button" style="background: #18A830; color: #fff;">Logística</v-btn>
+          </div>
+        </v-col>
+        <v-col>
+          <div class="ma-4" align="center">
+            <v-img class="rounded-xl" width="335" :aspect-ratio="1" src="../assets/curso-enfermagem.png"></v-img>
+            <v-btn class="mt-10 text-button" style="background: #18A830; color: #fff;">Enfermagem</v-btn>
+          </div>
+        </v-col>
+      </v-row>
+    </div>
 
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
+     <!-- Infraestrutura -->
+     <v-row class="mt-10">
+      <v-col>
+        <div class="ma-4">
+          <v-img class="img rounded-xl" width="580" :aspect-ratio="1" src="../assets/infraestrutura-img.png"></v-img>
+        </div>
       </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Important Links
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
+      <v-col class="ma-2">
+        <p class="text-h3 mb-8 font-weight-bold">Infraestrutura LTV</p>
+        <p class="text">Seu filho precisa de espaços inovadores, criativos e seguros para alcançar o melhor desenvolvimento cognitivo, psicossocial e físico. E é essa estrutura que o Luiza oferece a você!</p>
+        <p class="text">Além de uma equipe multidisciplinar para acolher os alunos, dispomos de ambientes amplos, lúdicos, modernos e interativos para proporcionar o crescimento pleno do estudante.</p>
+        <v-btn class="mt-10 text-button" style="background: #18A830; color: #fff;">garanta a matrícula</v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -96,56 +62,19 @@
     name: 'HomeView',
 
     data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
-  }
+      //
+  }),
+}
 </script>
+
+<style scoped>
+  .text{
+    font-size: 20px;
+    letter-spacing: 0.7px;
+  }
+
+
+  .img{
+    margin: auto;
+  }
+</style>
