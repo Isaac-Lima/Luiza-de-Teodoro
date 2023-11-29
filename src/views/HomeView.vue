@@ -21,7 +21,7 @@
       <v-row>
         <v-col>
           <div class="ma-4" align="center">
-            <v-img class="rounded-xl" width="480" :aspect-ratio="1" src="../assets/curso-informatica.png"></v-img>
+            <v-img class="rounded-xl" width="335" :aspect-ratio="1" src="../assets/curso-informatica.png"></v-img>
             <v-btn class="mt-10 text-button" style="background: #18A830; color: #fff;">Informática</v-btn>
           </div>
         </v-col>

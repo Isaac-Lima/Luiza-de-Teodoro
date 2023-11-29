@@ -2,17 +2,17 @@
   <v-conteiner>
     <v-carousel hide-delimiters>
       <v-carousel-item
-        src="../assets/infor.jpg"
+        src="../assets/img-1.png"
         cover
       ></v-carousel-item>
 
       <v-carousel-item
-        src="../assets/log.jpg"
+        src="../assets/img-2.png"
         cover
       ></v-carousel-item>
 
       <v-carousel-item
-        src="../assets/enfer.jpg"
+        src="../assets/banner-image-intership.png"
         cover
       ></v-carousel-item>
     </v-carousel>
