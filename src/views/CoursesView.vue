@@ -147,7 +147,7 @@
       <v-col cols="12">
         <div class="d-flex justify-center mt-16">
           <v-text-tile>
-            <v-title class="text-h6 text-md-h5 text-lg-h4 font-weight-bold ">EXPERIÊNCIA PROFISSIONAL É AQUI!</v-title>
+            <v-title class="text-h6 text-md-h5 text-lg-h4 font-weight-bold">EXPERIÊNCIA PROFISSIONAL É AQUI!</v-title>
           </v-text-tile>
         </div>
       </v-col>
@@ -156,9 +156,7 @@
     <v-row justify="center">
       <v-col cols="12" md="6">
         <div class="text-center mt-16 mb-16">
-          <v-btn x-large rounded width="50%" class="text-button" style="background: #18A830; color: #fff;">
-            Matricule-se
-          </v-btn>
+          <v-btn x-large rounded width="50%" class="text-button" style="background: #18a830; color: #fff"> Matricule-se </v-btn>
         </div>
       </v-col>
     </v-row>
