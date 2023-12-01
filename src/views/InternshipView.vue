@@ -74,8 +74,12 @@
 
 <script>
 export default {
-  name: "InternshipView",
-};
+    name: 'InternshipView',
+
+    data: () => ({
+      //
+  }),
+}
 </script>
 
 <style scoped>

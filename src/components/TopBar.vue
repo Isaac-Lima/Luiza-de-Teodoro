@@ -58,7 +58,8 @@ export default {
       items: [
         { link: "/", text: "Home", icon: "mdi-home" },
         { link: "/Courses", text: "Cursos", icon: "mdi-book-open-variant" },
-        { link: "/Internship", text: "Estágio", icon: "mdi-account-file-text" }
+        { link: "/Internship", text: "Estágio", icon: "mdi-account-file-text" },
+        { link: "/Registration", text: "Matrícula", icon: "mdi-account-plus"}
       ],
       drawer: null,
       screenSize: document.documentElement.clientWidth,

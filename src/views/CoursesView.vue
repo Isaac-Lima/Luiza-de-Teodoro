@@ -166,7 +166,13 @@
 </template>
 
 <script>
+export default {
+    name: 'CoursesView',
 
+    data: () => ({
+      //
+  }),
+}
 </script>
 
 <style scoped>
