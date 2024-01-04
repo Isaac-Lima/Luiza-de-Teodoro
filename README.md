@@ -2,6 +2,8 @@
 
 This project is a school website aimed at introducing the school to new students and people interested in the admissions process.
 
+See the site: https://luiza-de-teodoro.netlify.app/
+
 ## 📄 Sections
 
 - Home (Description of the school and presentation of courses)
